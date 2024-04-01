@@ -73,7 +73,7 @@ public class MainTest {
         PrintStream saveOut = System.out;
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
-        assertEquals(car.startEngine(), "the car's engine is starting");
+        assertEquals(car.startEngine(), "The car's engine is starting.");
         assertThat(out.toString(), containsString(car.getClass().getSimpleName()));
     }
 
@@ -83,7 +83,7 @@ public class MainTest {
         PrintStream saveOut = System.out;
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
-        assertEquals(car.accelerate(), "the car is accelerating");
+        assertEquals(car.accelerate(), "The car is accelerating.");
         assertThat(out.toString(), containsString(car.getClass().getSimpleName()));
     }
 
@@ -93,7 +93,7 @@ public class MainTest {
         PrintStream saveOut = System.out;
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
-        assertEquals(car.brake(), "the car is braking");
+        assertEquals(car.brake(), "The car is braking.");
         assertThat(out.toString(), containsString(car.getClass().getSimpleName()));
     }
 
